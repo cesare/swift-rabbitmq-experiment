@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D30355D21E3CE9660066FF04 /* RMQClient.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D30355D11E3CE9660066FF04 /* RMQClient.framework.dSYM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D30355D41E3CF0890066FF04 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30355D31E3CF0890066FF04 /* Notifier.swift */; };
 		D341C14F1E349DE000FF466B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */; };
 		D341C1501E349DE000FF466B /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D341C1531E349DFA00FF466B /* JKVValue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D341C1521E349DFA00FF466B /* JKVValue.framework */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		D30355D11E3CE9660066FF04 /* RMQClient.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RMQClient.framework.dSYM; path = Carthage/Build/Mac/RMQClient.framework.dSYM; sourceTree = "<group>"; };
+		D30355D31E3CF0890066FF04 /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		D341C1521E349DFA00FF466B /* JKVValue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKVValue.framework; path = Carthage/Build/Mac/JKVValue.framework; sourceTree = "<group>"; };
 		D341C1561E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaAsyncSocket.framework.dSYM; path = Carthage/Build/Mac/CocoaAsyncSocket.framework.dSYM; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				D3C2F8631E349A6F00D6EA94 /* Main.storyboard */,
 				D3C2F8661E349A6F00D6EA94 /* Info.plist */,
 				D3725E721E3CE214001C545B /* Amp.swift */,
+				D30355D31E3CF0890066FF04 /* Notifier.swift */,
 			);
 			path = RabbitExp;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3725E731E3CE214001C545B /* Amp.swift in Sources */,
+				D30355D41E3CF0890066FF04 /* Notifier.swift in Sources */,
 				D3C2F8601E349A6F00D6EA94 /* ViewController.swift in Sources */,
 				D3C2F85E1E349A6F00D6EA94 /* AppDelegate.swift in Sources */,
 			);
