@@ -11,6 +11,8 @@
 		D341C1501E349DE000FF466B /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D341C1531E349DFA00FF466B /* JKVValue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D341C1521E349DFA00FF466B /* JKVValue.framework */; };
 		D341C1541E349DFA00FF466B /* JKVValue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D341C1521E349DFA00FF466B /* JKVValue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D341C1571E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D341C1561E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM */; };
+		D341C1591E349F0000FF466B /* JKVValue.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D341C1581E349F0000FF466B /* JKVValue.framework.dSYM */; };
 		D3C2F85E1E349A6F00D6EA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2F85D1E349A6F00D6EA94 /* AppDelegate.swift */; };
 		D3C2F8601E349A6F00D6EA94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2F85F1E349A6F00D6EA94 /* ViewController.swift */; };
 		D3C2F8621E349A6F00D6EA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C2F8611E349A6F00D6EA94 /* Assets.xcassets */; };
@@ -49,11 +51,24 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D341C1551E349E9600FF466B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				D341C1591E349F0000FF466B /* JKVValue.framework.dSYM in CopyFiles */,
+				D341C1571E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		D341C1521E349DFA00FF466B /* JKVValue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKVValue.framework; path = Carthage/Build/Mac/JKVValue.framework; sourceTree = "<group>"; };
+		D341C1561E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaAsyncSocket.framework.dSYM; path = Carthage/Build/Mac/CocoaAsyncSocket.framework.dSYM; sourceTree = "<group>"; };
+		D341C1581E349F0000FF466B /* JKVValue.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = JKVValue.framework.dSYM; path = Carthage/Build/Mac/JKVValue.framework.dSYM; sourceTree = "<group>"; };
 		D3C2F85A1E349A6F00D6EA94 /* RabbitExp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitExp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C2F85D1E349A6F00D6EA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C2F85F1E349A6F00D6EA94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +113,8 @@
 		D3C2F8511E349A6F00D6EA94 = {
 			isa = PBXGroup;
 			children = (
+				D341C1581E349F0000FF466B /* JKVValue.framework.dSYM */,
+				D341C1561E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM */,
 				D341C1521E349DFA00FF466B /* JKVValue.framework */,
 				D341C14E1E349DE000FF466B /* CocoaAsyncSocket.framework */,
 				D3C2F85C1E349A6F00D6EA94 /* RabbitExp */,
@@ -158,6 +175,7 @@
 				D3C2F8571E349A6F00D6EA94 /* Frameworks */,
 				D3C2F8581E349A6F00D6EA94 /* Resources */,
 				D341C1511E349DE000FF466B /* Embed Frameworks */,
+				D341C1551E349E9600FF466B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -430,6 +448,7 @@
 				);
 				INFOPLIST_FILE = RabbitExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mayverse.RabbitExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -447,6 +466,7 @@
 				);
 				INFOPLIST_FILE = RabbitExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mayverse.RabbitExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
