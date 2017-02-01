@@ -9,10 +9,10 @@
 import Foundation
 
 class Notifier {
-    func notify(message: String) {
+    func notify(message: Message) {
         let notification = NSUserNotification.init()
-        notification.title = "test"
-        notification.informativeText = message
+        notification.title = message.title
+        notification.informativeText = message.text
         NSUserNotificationCenter.default.deliver(notification)
     }
 }

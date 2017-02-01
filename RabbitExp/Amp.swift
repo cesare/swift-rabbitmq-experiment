@@ -19,10 +19,14 @@ class Amp {
         let queue = ch.queue("hello")
 
         queue.subscribe({(_ message: RMQMessage) -> Void in
-            let notifier = Notifier()
-            let text = String(data: message.body, encoding: .utf8)!
-            notifier.notify(message: text)
-            // print("Received \(String(data: message.body, encoding: .utf8))")
+            do {
+                let msg = try Message.parse(data: message.body)
+                let notifier = Notifier()
+                notifier.notify(message: msg)
+            }
+            catch _ {
+                // TODO handle errors
+            }
         })
     }
 }

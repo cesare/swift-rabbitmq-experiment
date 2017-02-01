@@ -1,16 +1,19 @@
-import Argo
-import Curry
-import Runes
+import Foundation
+import Unbox
 
 struct Message {
     let title: String
     let text: String
 }
 
-extension Message: Decodable {
-    static func decode(_ json: JSON) -> Decoded<Message> {
-        return curry(Message.init)
-            <^> json <| "title"
-            <*> json <| "text"
+extension Message: Unboxable {
+    init(unboxer: Unboxer) throws {
+        self.title = try unboxer.unbox(key: "title")
+        self.text = try unboxer.unbox(key: "text")
+    }
+
+    static func parse(data: Data) throws -> Message {
+        let message: Message = try unbox(data: data)
+        return message
     }
 }
