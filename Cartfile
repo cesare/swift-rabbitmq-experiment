@@ -1,4 +1,2 @@
 github "rabbitmq/rabbitmq-objc-client" "5145acf80a6c60b5a2aac76e90ee64c1e15f9487"
-github "thoughtbot/Argo"
-github "thoughtbot/Curry"
 github "JohnSundell/Unbox"
