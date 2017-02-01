@@ -18,6 +18,9 @@
 		D3725E731E3CE214001C545B /* Amp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3725E721E3CE214001C545B /* Amp.swift */; };
 		D3725E751E3CE567001C545B /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3725E741E3CE567001C545B /* RMQClient.framework */; };
 		D3725E761E3CE567001C545B /* RMQClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3725E741E3CE567001C545B /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3BF1D7E1E422E39000C2BA8 /* Unbox.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3BF1D7D1E422E39000C2BA8 /* Unbox.framework.dSYM */; };
+		D3BF1D801E422E4E000C2BA8 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BF1D7F1E422E4E000C2BA8 /* Unbox.framework */; };
+		D3BF1D811E422E4E000C2BA8 /* Unbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3BF1D7F1E422E4E000C2BA8 /* Unbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3C2F85E1E349A6F00D6EA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2F85D1E349A6F00D6EA94 /* AppDelegate.swift */; };
 		D3C2F8601E349A6F00D6EA94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2F85F1E349A6F00D6EA94 /* ViewController.swift */; };
 		D3C2F8621E349A6F00D6EA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C2F8611E349A6F00D6EA94 /* Assets.xcassets */; };
@@ -54,6 +57,7 @@
 				D341C1541E349DFA00FF466B /* JKVValue.framework in Embed Frameworks */,
 				D3725E761E3CE567001C545B /* RMQClient.framework in Embed Frameworks */,
 				D341C1501E349DE000FF466B /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				D3BF1D811E422E4E000C2BA8 /* Unbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				D3BF1D7E1E422E39000C2BA8 /* Unbox.framework.dSYM in CopyFiles */,
 				D30355D21E3CE9660066FF04 /* RMQClient.framework.dSYM in CopyFiles */,
 				D341C1591E349F0000FF466B /* JKVValue.framework.dSYM in CopyFiles */,
 				D341C1571E349EE900FF466B /* CocoaAsyncSocket.framework.dSYM in CopyFiles */,
@@ -81,6 +86,8 @@
 		D341C1581E349F0000FF466B /* JKVValue.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = JKVValue.framework.dSYM; path = Carthage/Build/Mac/JKVValue.framework.dSYM; sourceTree = "<group>"; };
 		D3725E721E3CE214001C545B /* Amp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amp.swift; sourceTree = "<group>"; };
 		D3725E741E3CE567001C545B /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = Carthage/Build/Mac/RMQClient.framework; sourceTree = "<group>"; };
+		D3BF1D7D1E422E39000C2BA8 /* Unbox.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Unbox.framework.dSYM; path = Carthage/Build/Mac/Unbox.framework.dSYM; sourceTree = "<group>"; };
+		D3BF1D7F1E422E4E000C2BA8 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/Mac/Unbox.framework; sourceTree = "<group>"; };
 		D3C2F85A1E349A6F00D6EA94 /* RabbitExp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitExp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C2F85D1E349A6F00D6EA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C2F85F1E349A6F00D6EA94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +111,7 @@
 				D341C1531E349DFA00FF466B /* JKVValue.framework in Frameworks */,
 				D3725E751E3CE567001C545B /* RMQClient.framework in Frameworks */,
 				D341C14F1E349DE000FF466B /* CocoaAsyncSocket.framework in Frameworks */,
+				D3BF1D801E422E4E000C2BA8 /* Unbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +135,8 @@
 		D3C2F8511E349A6F00D6EA94 = {
 			isa = PBXGroup;
 			children = (
+				D3BF1D7F1E422E4E000C2BA8 /* Unbox.framework */,
+				D3BF1D7D1E422E39000C2BA8 /* Unbox.framework.dSYM */,
 				D30355D11E3CE9660066FF04 /* RMQClient.framework.dSYM */,
 				D3725E741E3CE567001C545B /* RMQClient.framework */,
 				D341C1581E349F0000FF466B /* JKVValue.framework.dSYM */,
