@@ -1,0 +1,5 @@
+%{"amqp": {:hex, :amqp19, "0.1.5", "0a05693c9ff7cb8f77db3615012882af594fcc2fddc94bd62894b279003ab406", [:mix], [{:amqp_client, "3.6.2", [hex: :conduit_amqp_client, optional: false]}]},
+  "amqp_client": {:hex, :conduit_amqp_client, "3.6.2", "1f39c67c634b0f798a270ffcc8e70fff93bba8f9857b9ba03857a3394962a320", [:rebar3], [{:rabbit_common, "3.5.6", [hex: :rabbit_common, optional: false]}]},
+  "earmark": {:hex, :earmark, "1.1.1", "433136b7f2e99cde88b745b3a0cfc3fbc81fe58b918a09b40fce7f00db4d8187", [:mix], []},
+  "json": {:hex, :json, "1.0.0", "4824dadb01e14395f65e9d18da294d534326d7eed77996f3c22f74a9870179eb", [:mix], [{:earmark, ">= 0.0.0", [hex: :earmark, optional: false]}]},
+  "rabbit_common": {:hex, :rabbit_common, "3.5.6", "ad541be86f08cdb1c04320eb4353ad30f25555569c95cc062af28cf79b74d085", [:rebar], []}}
